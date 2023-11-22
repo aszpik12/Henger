@@ -1,2 +1,2 @@
-# Henger
+# HengerProgram
 # Petrovai Asztrik Örs
