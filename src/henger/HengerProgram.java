@@ -1,9 +1,12 @@
 package henger;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HengerProgram {
-
+    
+    List hengerek;
+    
     public static void main(String[] args) {
 
         new HengerProgram().run();
@@ -31,8 +34,12 @@ public class HengerProgram {
         return 1;
     }
 
-    private List lista() {
-
+    private List<Henger> lista() {
+        hengerek = new ArrayList<>();
+        hengerek.add(new Henger(1, 1));
+        hengerek.add(new TomorHenger(1, 1));
+        hengerek.add(new Cso(1, 1, .5));
+        hengerek.add(new Cso(1, 1, .1));
         return null;
     }
 
