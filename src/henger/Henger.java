@@ -3,10 +3,10 @@ package henger;
 public class Henger {
 
     private static int hengerDarab;
-    private double sugat, magassag;
+    private double sugar, magassag;
 
     public Henger(double r, double m) {
-        this.sugat = r;
+        this.sugar = r;
         this.magassag = m;
     }
 
@@ -15,7 +15,7 @@ public class Henger {
     }
 
     public double getSugat() {
-        return sugat;
+        return sugar;
     }
 
     public double getMagassag() {
@@ -23,8 +23,7 @@ public class Henger {
     }
 
     public double terfogat() {
-
-        return 1;
+        return Math.pow(sugar, sugar)*Math.PI*magassag;
     }
 ;
 
