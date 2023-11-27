@@ -18,12 +18,19 @@ public class Cso extends TomorHenger {
     }
 
     public double terfogat() {
-
-        return 1;
+        double belsosugar= getSugar()-falvastagsag;
+        double kulso = Math.pow(getSugar(), 2)*Math.PI*getMagassag();
+        double belso = Math.pow(belsosugar, 2)*Math.PI*getMagassag();
+        return kulso-belso;
     }
 
     @Override
+    public double suly() {
+        return super.suly(); 
+    }
+    
+    @Override
     public String toString() {
-        return "Cso{" + "falvastagsag=" + falvastagsag + '}';
+        return "Cso{" + "falvastagsag=" + falvastagsag + "súly=" + suly() +'}';
     }
 }

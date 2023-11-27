@@ -14,17 +14,24 @@ public class Henger {
         return hengerDarab;
     }
 
-    public double getSugat() {
+    public double getSugar() {
         return sugar;
     }
 
     public double getMagassag() {
         return magassag;
     }
-
+    
     public double terfogat() {
-        return Math.pow(sugar, sugar)*Math.PI*magassag;
+        return Math.pow(sugar, 2)*Math.PI*magassag;
     }
-;
 
+    @Override
+    public String toString() {
+        return "Henger{" + "sugar=" + sugar + ", magassag=" + magassag + "térfogat=" + terfogat() + '}';
+    }
+
+    
+    
+    
 }
